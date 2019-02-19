@@ -78,9 +78,9 @@
             <p class="comment-form-comment"><label for="comment">Comment <span class="required"> *</span></label><textarea id="commentt" name="noidung" cols="45" rows="8""></textarea>
         <p class="form-submit"><input name="submit" type="submit" id="send-comment" class="submit" value="Post Comment"></p>
     </form><p></p></div></div>
-</div>
+
 @endif
 
-
+</div>
 
 @endsection
