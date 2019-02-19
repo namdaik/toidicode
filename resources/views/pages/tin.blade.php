@@ -70,17 +70,17 @@
         <!-- .children -->
     </div>
 </div>
-</div>
-
 @if(Auth::user())
-<form action="binhluan/{{$tintuc->id}}" method="post">
-    <input name="_token" type="hidden" value="{{csrf_token()}}">
-        <textarea name="noidung">
-        </textarea>
-        <button type="submit">
-            Bình luận
-        </button>
-    </input>
-</form>
+<div id="respond" class="comment-respond">
+    <div id="content-f"><h3 id="reply-title" class="comment-reply-title">Để Lại Bình Luận <small><a rel="nofollow" class="cancel-comment-reply-link" style="display:none;float:right" onclick="action.hideForm()">X</a></small></h3>
+        <form action="binhluan/{{$tintuc->id}}" method="post" class="comment-form anti-spam-form-processed">
+            <input name="_token" type="hidden" value="{{csrf_token()}}">
+            <p class="comment-form-comment"><label for="comment">Comment <span class="required"> *</span></label><textarea id="commentt" name="noidung" cols="45" rows="8""></textarea>
+        <p class="form-submit"><input name="submit" type="submit" id="send-comment" class="submit" value="Post Comment"></p>
+    </form><p></p></div></div>
+</div>
 @endif
+
+
+
 @endsection

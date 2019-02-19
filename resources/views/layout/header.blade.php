@@ -9,8 +9,8 @@
         </div>
         <div class="site-branding">
             <h1 class="site-title" style="">
-                <a class="has-logo" href="https://toidicode.com/" title="Toidicode.com">
-                    <img alt="Toidicode.com" src="https://toidicode.com/upload/images/logo.png"/>
+                <a class="has-logo" href="/toidicode" title="Toidicode">
+                    <img alt="Toidicode" src="https://toidicode.com/upload/images/logo.png"/>
                 </a>
             </h1>
             <span class="site-description">
@@ -45,7 +45,7 @@
                         </a>
                         <ul class="search-header-form-ul" style="background: white">
                             <li>
-                                <form action="https://toidicode.com/tim-kiem.html" class="search-header-form" method="get">
+                                <form action="#tim-kiem.html" class="search-header-form" method="get">
                                     <input class="search-input" name="q" onblur="(this.value == '') && (this.value = 'Nhập nội dung tìm kiếm ....')" onfocus="(this.value == 'Nhập nội dung tìm kiếm ....') && (this.value = '')" placeholder="Nhập nội dung tìm kiếm ...." size="20" type="text"/>
                                 </form>
                             </li>

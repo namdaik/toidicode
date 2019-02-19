@@ -6,19 +6,17 @@
                         <li class="menu-item">
                             <a href="dangnhap" style="text-decoration: none;">Đăng nhập</a>
                         </li>
-                        <li class="menu-item">
-                            <a href="dangky" style="text-decoration: none;">Liên Hệ</a>
-                        </li>
                         @else
                         <li class="menu-item">
-                           <p style="text-decoration: none;"> {{Auth::user()->name}}</p>
+                           <a href="#" style="text-decoration: none;"> {{Auth::user()->name}}</a>
+                        </li>
+                         <li class="menu-item">
+                           <a href="/toidicode/admin/theloai/danhsach" style="text-decoration: none;">Quản trị</a>
                         </li>
                         <li class="menu-item">
                             <a href="dangxuat" style="text-decoration: none;">Đăng xuất</a>
                         </li>
-                        
                         @endif
-
                     </ul>
                 </div>
             </div>
